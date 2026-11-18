@@ -8,7 +8,13 @@ public class FormMenu {
     private JButton btnCreditos;
     private ArrayList<Usuario> usuarios = new ArrayList<>();
     private int siguienteId = 1;
+    public int obtenerSiguienteId() {
+        return siguienteId++;
+    }
     public FormMenu() {
+        btnRegistrar.addActionListener(e -> {
+            new FormRegistro(usuarios, this);
+        });
         JFrame ventana = new
                 JFrame("BookUsers" );
 
