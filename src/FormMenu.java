@@ -15,6 +15,12 @@ public class FormMenu {
         btnRegistrar.addActionListener(e -> {
             new FormRegistro(usuarios, this);
         });
+
+        btnListado.addActionListener(e -> {
+            FormListado listado = new FormListado(usuarios);
+            listado.setVisible(true);
+        });
+
         JFrame ventana = new
                 JFrame("BookUsers" );
 
