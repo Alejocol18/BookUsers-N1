@@ -23,6 +23,7 @@ public class FormListado extends JFrame {
         cargarUsuarios();
 
         btnVolver.addActionListener(e -> dispose());
+
         btnVerDetalle.addActionListener(e -> {
             int posicion = listaUsuarios.getSelectedIndex();
 
@@ -36,11 +37,10 @@ public class FormListado extends JFrame {
 
             Usuario seleccionado = usuarios.get(posicion);
 
-            JOptionPane.showMessageDialog(
-                    this,
-                    "Usuario: " + seleccionado.getUsername()
-            );
+            FormDetalle detalle = new FormDetalle(seleccionado);
+            detalle.setVisible(true);
         });
+
     }
 
     private void cargarUsuarios() {
