@@ -20,6 +20,10 @@ public class FormMenu {
             FormListado listado = new FormListado(usuarios);
             listado.setVisible(true);
         });
+        btnCreditos.addActionListener(e -> {
+            FormCreditos creditos = new FormCreditos();
+            creditos.setVisible(true);
+        });
 
         JFrame ventana = new
                 JFrame("BookUsers" );
