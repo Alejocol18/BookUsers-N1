@@ -58,6 +58,7 @@ public class FormRegistro {
         ventana.setContentPane(panelPrincipal);
         ventana.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);
         ventana.pack();
+        ventana.setSize(580, 480);
         ventana.setLocationRelativeTo(null);
         ventana.setVisible(true);
     }
