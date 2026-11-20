@@ -37,7 +37,7 @@ public class FormListado extends JFrame {
 
             Usuario seleccionado = usuarios.get(posicion);
 
-            FormDetalle detalle = new FormDetalle(seleccionado);
+            FormDetalle detalle = new FormDetalle(seleccionado, usuarios);
             detalle.setVisible(true);
         });
 
